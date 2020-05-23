@@ -1,20 +1,18 @@
 # Eko2019 - Windows 10 x64 [Info Leak, ASLR Bypass, ROP]
 
-Created: May 10, 2020 2:41 PM
-
 BFS Ekoparty 2019 Exploitation Challenge: [Link](https://labs.bluefrostsecurity.de/blog/2019/09/07/bfs-ekoparty-2019-exploitation-challenge/)
 
-## Normal Flow
+## Screenshot
 
----
+![Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/2020-05-23_15-41-16.gif](Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/2020-05-23_15-41-16.gif)
+
+## Normal Flow
 
 หลังจากที่เรา Reverse Engineer Binary นี้เราจะพบ Flow การทำงานคร่าว ๆ เหมือนรูปนี้
 
 ![Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/Untitled.png](Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/Untitled.png)
 
 ## Vulnerability in Flow
-
----
 
 ซึ่งจากการวิเคราะห์เราพบช่องโหว่หลัก ๆ 2 ถึง 3 ช่องโหว่(จริง ๆ ช่องโหว่ที่ 2-3 ค่อนข้าง Relate กัน)
 
@@ -39,8 +37,6 @@ Integer Overflow ใน msg_size ทำให้เราสามารถส�
 ![Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/Untitled%204.png](Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/Untitled%204.png)
 
 ## Exploitation
-
----
 
 **Tested on:** Windows 10 x64 Build 1909
 **Language:** Python3
@@ -228,8 +224,4 @@ Integer Overflow ใน msg_size ทำให้เราสามารถส�
     w8()
     ```
 
-    ### PoC Screenshot
-
-    ---
-
-    ![Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/2020-05-23_15-41-16.gif](Eko2019%20Windows%2010%20x64%20Info%20Leak%20ASLR%20Bypass%20ROP%208f352c82d95141f6a0199e38207ab15b/2020-05-23_15-41-16.gif)
+    
