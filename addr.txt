@@ -1,0 +1,11 @@
+Normal 
+msg_buf 0x12ffba0
+rsp b4 call+0x1000 0x00000000012ffb40
+rsp b4 ret_Incomming_handler  0x00000000012ffdd8
+delta(msg_buf, ret_incomming) = +568 (+8?)
+
+Vuln 
+msg_buf 0x12ffba0
+rsp b4 call function 0x00000000012ffb40
+rsp b4 ret_winExec 0x00000000012ffc18
+delta(msg_buf, ret_winExe) = +120
