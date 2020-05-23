@@ -38,10 +38,10 @@ Integer Overflow ใน msg_size ทำให้เราสามารถส�
 
 ## Exploitation
 
-**Tested on:** Windows 10 x64 Build 1909
-**Language:** Python3
-**Technique:** Integer Overflow, Buffer Overflow, Information Leak, Stack Pivot, Return-Oriented Programming(ROP)
-**Exploit:** [exploit.py](https://github.com/jusmistic/BFS-Ekoparty-ctf-2019/blob/master/exploit.py)
+**Tested on:** Windows 10 x64 Build 1909<br>
+**Language:** Python3<br>
+**Technique:** Integer Overflow, Buffer Overflow, Information Leak, Stack Pivot, Return-Oriented Programming(ROP)<br>
+**Exploit:** [exploit.py](https://github.com/jusmistic/BFS-Ekoparty-ctf-2019/blob/master/exploit.py)<br>
 
 1. **Integer Overflow** 
 
